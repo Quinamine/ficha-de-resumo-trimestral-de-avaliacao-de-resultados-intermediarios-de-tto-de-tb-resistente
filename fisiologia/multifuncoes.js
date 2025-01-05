@@ -27,21 +27,10 @@ function destacarCelulasComConteudoOmisso() {
     const celulas = document.querySelectorAll(".ficha__seccao input");
     let celulasSaturadas = 0;
     for(const c of celulas) {
-        c.classList.remove("input--font-small");
         c.classList.remove("input--bg-color-danger");
-        if(c.clientWidth > 100) {
-            if(c.value.length > 13) {
-                c.classList.add("input--bg-color-danger");
-                celulasSaturadas++;
-            }
-            
-        } else {
-            if(c.value.length === 9) {
-                c.classList.add("input--font-small");
-            } else if(c.value.length > 9) {
-                c.classList.add("input--bg-color-danger");
-                celulasSaturadas++;
-            }
+        if(c.value.length > 12) {
+            c.classList.add("input--bg-color-danger");
+            celulasSaturadas++;
         }
     }
     if(celulasSaturadas > 0) {
@@ -75,12 +64,6 @@ function actualizarAnoDeCopyright() {
     const currentYearOutput = document.querySelector(".footer__current-year");
     currentYearOutput.textContent = anoActual;
 }
-function formatarNumeros() {
-    const numeros = document.querySelectorAll(".number-format");
-    for (const n of numeros) {
-        n.textContent = Number(n.textContent).toLocaleString();
-    }
-}
 function animarCaixaDeDialogo(event) {
     const dialogBox = document.querySelector(".dialog-box-esvaziar-ficha");
     if(dialogBox.matches(".--open")) {
@@ -91,7 +74,18 @@ function animarCaixaDeDialogo(event) {
 function fecharTopoPropaganda(topoPropaganda) {
     const body = document.querySelector("#body");
     topoPropaganda.classList.add("topo-propaganda--off");
-    body.classList.remove("body-com-topo-propaganda")
+    if(!topoPropaganda.matches(".topo-propaganda--festas-felizes")) {
+        body.classList.remove("body-com-topo-propaganda");
+    }
+}
+function omitirLinkDesteServicoNoRodape(){
+    const servicosAfins = document.querySelectorAll(".footer__nav__link");
+    let urlDestaPagina = location.href;
+    for (const servico of servicosAfins) {
+        if(servico.href === urlDestaPagina) {
+            servico.parentElement.hidden = true;
+        }
+    }
 }
 let btnAutoCloseLoop;
 window.addEventListener("load", () => {
@@ -104,7 +98,6 @@ window.addEventListener("load", () => {
     inputsCelulares.forEach (inputCelular => inputCelular.addEventListener("input", destacarCelulasComConteudoOmisso));
     destacarCelulasComConteudoOmisso();
     actualizarAnoDeCopyright()
-    formatarNumeros();
     aqd.mostrarAviso();
     const dialogBoxAQD__btn = document.querySelector(".dialog-box-default__btn--aqd");
     dialogBoxAQD__btn.addEventListener("click", aqd.salvarCiencia);
@@ -126,4 +119,5 @@ window.addEventListener("load", () => {
     });
     inputObs.addEventListener("focus", () => inputObs.parentElement.classList.add("--focus"));
     inputObs.addEventListener("focusout", () => inputObs.parentElement.classList.remove("--focus"));
+    omitirLinkDesteServicoNoRodape();
 });
