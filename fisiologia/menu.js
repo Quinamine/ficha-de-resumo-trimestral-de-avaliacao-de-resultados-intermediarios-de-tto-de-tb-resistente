@@ -142,9 +142,9 @@ function eventos() {
     btnFecharAjuda.addEventListener("click", () => menu.fecharArtigo("ajuda"));
     // PARTILHAR 
     const data = {
-        title: "Ficha de Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente",
+        title: "Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente",
         text: "As células da ficha são interativas, isto é, pode inserir valores nelas.",
-        url: "https://quinamine.github.io/ficha-de-de-resumo-trimestral-de-avaliacao-de-resultados-intermediarios-de-tto-de-tb-resistente/index.html"
+        url: "https://quinamine.github.io/ficha-de-resumo-trimestral-de-avaliacao-de-resultados-intermediarios-de-tto-de-tb-resistente/index.html"
     }
     const btnPartilhar = document.querySelector(".header__menu__btn--partilhar");
     btnPartilhar.addEventListener("click", () => {

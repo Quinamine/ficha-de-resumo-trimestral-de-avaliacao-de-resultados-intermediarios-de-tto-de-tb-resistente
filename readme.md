@@ -1,13 +1,13 @@
-# Ficha de Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente
+# Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente
 
-![Trecho do serviço Ficha de Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente](imagens/ficha-de-de-resumo-trimestral-de-avaliacao-de-resultados-intermediarios-de-tto-de-tb-resistente.png)
+![Trecho do serviço Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente](imagens/ficha-de-resumo-trimestral-de-avaliacao-de-resultados-intermediarios-de-tto-de-tb-resistente.png)
 
-O serviço foi criado de acordo com o modelo da Ficha de Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente actualmente vigente no Serviço Nacional de Saúde em Moçambique e as células são interativas, isto é, pode inserir valores nelas.
+O serviço foi criado de acordo com o modelo da Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente actualmente vigente no Serviço Nacional de Saúde em Moçambique e as células são interativas, isto é, pode inserir valores nelas.
 
 
 ## Propósito
 
-* Expandir o acesso à Ficha de Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente.
+* Expandir o acesso à Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente.
 
 
 ## O que eu preciso dispor para, e como utilizar o totalizador?
