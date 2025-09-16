@@ -123,8 +123,8 @@
                                 <label for="input-periodo">Trimestre em reporte</label>
                             </div>
                             <div class="ficha__col-de-localizacao__linha ficha__col-de-localizacao__linha--margin-t --display-flex-y-center">
-                                <label for="input-periodo">Data:</label>
-                                <input type="text" id="input-periodo" class="input-nao-celular --fw-700">
+                                <input type="text" id="input-periodo" list="datalist-trimestre" class="input-nao-celular --fw-700 --border-b">
+                                <datalist id="datalist-trimestre"></datalist>
                             </div>
                         </div>
                         <div class="ficha__header__col-de-titulo --border-t-thick --border-b-thick">
@@ -214,7 +214,7 @@
                             </datalist>
                         </div>
                         <div class="ficha__rodape__col-de-data">
-                            <label for="input-data" class="ficha__col-de-data__label">Data</label>
+                            <label for="input-data" class="ficha__col-de-data__label">Data:</label>
                             <input type="date" id="input-data" class="input-nao-celular --fw-700 --border-b">
                         </div>
                     </footer> 
@@ -334,7 +334,7 @@
                 <figure>
                     <img alt="Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente" src=imagens/ficha-de-resumo-trimestral-de-avaliacao-de-resultados-intermediarios-de-tto-de-tb-resistente.png class="artigo__img artigo__img--center">
                 </figure>
-                <p>O serviço foi criado de acordo com o modelo da Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente actualmente vigente no Serviço Nacional de Saúde em Moçambique e as células são interativas, isto é, pode inserir valores nelas. </p>
+                <p>O serviço foi criado de acordo com o modelo da <a href="fichamodelo/mod-sis-pnct-r06.pdf" download="Ficha-de-Resumo-Trimestral-de-Avaliação-de-Resultados-Intermediários-de-Tratamento-de-TB-Resistente" target="_blank">Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente</a> actualmente vigente no Serviço Nacional de Saúde em Moçambique e as células são interativas, isto é, pode inserir valores nelas. </p>
                     <h3 class="artigo__titulo artigo__titulo--nivel-2">Propósito</h3>
                     <ul class="artigo__lista artigo__lista--ul">
                         <li>Expandir o acesso à Ficha de Resumo Trimestral de Avaliação de Resultados Intermediários de Tratamento de TB Resistente.</li>
@@ -362,7 +362,7 @@
                 <details class="artigo__details">
                     <summary class="details__summary">Instruções de preenchimento</summary>
                     <h3 class="artigo__titulo artigo__titulo--nivel-2 artigo__titulo--no-border-t artigo__titulo--margin-t">CABEÇALHO</h3>
-                    <p><b>US, Distrito, Província, Trimestre de Reporte:</b> Preencha respectivamente o nome da sua unidade sanitária, distrito, província e o trimestre para o qual está elaborado o resumo.</p>
+                    <p><b>US, Distrito, Província, Trimestre em Reporte:</b> Preencha respectivamente o nome da sua unidade sanitária, distrito, província e o trimestre para o qual está elaborado o resumo.</p>
                     <h3 class="artigo__titulo artigo__titulo--nivel-2">SECÇÃO 1: AVALIAÇÃO DE RESULTADOS INTERMEDIÁRIOS DE TRATAMENTO DE TUBERCULOSE RESISTENTE ( AOS 6 MESES)</h3>
                     <h4 class="artigo__titulo artigo__titulo--nivel-2 artigo__titulo--no-border-t">Resultados de Conversão** da Cultura ao 6º mês de Tratamento</h4>
                     <h4 class="artigo__titulo artigo__titulo--nivel-2 artigo__titulo--no-border-t">a) TB Rif-Resistente/ Multi-Resistente/(TB RR/MR)</h4>
@@ -447,6 +447,7 @@
                 <nav class=footer__nav>
                     <h4 class="footer__nav__title">Hiperligações para outros serviços afins</h4>
                     <ul>
+                        <li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-rastreio-de-tb-usando-rx/index.html class="footer__nav__link">Totalizador de Resumo Mensal de Rastreio de TB usando RX</a></li>
                         <li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-tdi/index.html class="footer__nav__link">Totalizador de Resumo Mensal de TDI</a></li>
                         <li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-nutricao/index.html class="footer__nav__link">Totalizador de Resumo Mensal de Nutrição</a></li>
                         <li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-its/index.html class="footer__nav__link">Totalizador de Resumo Mensal de ITS</a></li>
